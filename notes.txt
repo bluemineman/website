@@ -1,0 +1,6 @@
+If I want github to reflect my changes ...
+1. git add .
+2. git commit -m "Updated website"
+3.git push
+
+fontawesome.com for little decals
