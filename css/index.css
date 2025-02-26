@@ -3,17 +3,22 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 50vh;
     margin: 0;
 }
 
 .title{
     position: relative;
-    height: 100px;
+    height: 200px;
     font-size: 40px;
 }
 
 .searchLink{
-    height: 0px;
+    height: 100px;
+    position: absolute;
+}
+
+.loadingLink{
+    height: 50px;
     position: absolute;
 }
