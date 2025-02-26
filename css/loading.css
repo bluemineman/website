@@ -14,9 +14,10 @@ body{
 }
 
 .bg{
-    background: url('..images/among.png');
+    background: url('../images/among.png');
     background-size: cover;
     background-position: center;
-    width
-    center/cover;
+    background-repeat: no-repeat;
+    width: 100vh;
+    height: 100vh;
 }
