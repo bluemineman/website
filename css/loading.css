@@ -21,4 +21,5 @@ body{
     width: 100vh;
     height: 100vh;
     position: absolute;
+    filter: blur(50px);
 }
