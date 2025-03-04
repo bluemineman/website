@@ -22,6 +22,13 @@ element2.addEventListener('mouseout', ()=>{
     element2.innerHTML = "I was joking!!!"
 })
 
+let positionY = 0;
+let positionX = 0;
+
 document.addEventListener('keyup', (event) =>{
     console.log(event.key)
+
+    if (event.key == 'ArrowUp') {
+        
+    }
 })
