@@ -47,17 +47,17 @@ document.addEventListener('keydown', (event) =>{
 })
 
 element4.addEventListener('click', () => {
-    element4.style.width = "10px"
-    element4.style.height = "10px"
+    element4.style.width = "5px"
+    element4.style.height = "5px"
     element4.innerHTML = ""
-    element4.style.opacity = .3
+    element4.style.opacity = .2
 })
 
 document.addEventListener('keyup', (event) => {
     if (event.key == 'j') {
     element4.style.width = "300px"
     element4.style.height = "50px"
-    element4.innerHTML = "Click Me to shrink. Press 'j' to Bring Me Back"
+    element4.innerHTML = "<h4>Click Me to shrink. <br> Press 'j' to Bring Me Back </h4> "
     element4.style.opacity = 1
     }
 })
