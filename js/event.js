@@ -2,6 +2,7 @@ const element1 = document.getElementById('element1')
 const element2 = document.getElementById('element2')
 const element3 = document.getElementById('element3')
 const element4 = document.getElementById('element4')
+const element5 = document.getElementById('element5')
 
 element1.addEventListener('click', ()=>{
     element1.innerHTML = "I've been clicked! <br> Try double clicking me."
@@ -60,4 +61,11 @@ document.addEventListener('keyup', (event) => {
     element4.innerHTML = "<h4>Click Me to shrink. <br> Press 'j' to Bring Me Back </h4> "
     element4.style.opacity = 1
     }
+})
+
+
+const list = ['running', 'paused']
+let index = 0
+element5.addEventListener('click', () =>{
+    element5.style.animationPlayState = list[index]
 })
