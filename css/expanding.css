@@ -22,6 +22,37 @@ body{
     background-repeat: no-repeat;
     height: 80vh;
     margin: 10px;
-    border-radius: 25px;
+    border-radius: 50px;
+    color: hite;
+    cursor: pointer;
+    flex: .5;
+    position: relative;
+}
+
+.panel.active{
     flex: 1;
 }
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active h3{
+    opacity: 1;
+}
+
+@media (max-width: 480px){
+    .panel:nth-of-type(4){
+        display: none;
+    };
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+
+-- video time 43:24
