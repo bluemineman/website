@@ -22,4 +22,6 @@ element2.addEventListener('mouseout', ()=>{
     element2.innerHTML = "I was joking!!!"
 })
 
-element3.addEventListener
+document.addEventListener('keyup', (event) =>{
+    console.log(event.key)
+})
