@@ -29,6 +29,7 @@ document.addEventListener('keyup', (event) =>{
     console.log(event.key)
 
     if (event.key == 'ArrowUp') {
-        
+        positionY = positionY - 10
     }
+    element3.style.top = postionY
 })
