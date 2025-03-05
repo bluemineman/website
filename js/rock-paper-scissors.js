@@ -17,12 +17,52 @@ let computerChoice = 1
         computerChoice = getRndInteger(1, 3)
         console.log(computerChoice)
         gamePlaying = true
-        if (computerChoice = 1) {
+        if (computerChoice == 1) {
             status.innerHTML = "Tied"
         }
-        else if (computerChoice = 2) {
+        else if (computerChoice == 2) {
             computerScore = computerScore + 1
             status.innerHTML = "You lose"
         }
+        else if (computerChoice == 3) {
+            playerScore = playerScore + 1
+            status.innerHTML = "You win"
+        }
+        score.innerHTML = `(You) ${playerScore} - (Computer) ${computerScore}`
     })
 
+    paper.addEventListener('click', ()=>{
+        computerChoice = getRndInteger(1, 3)
+        console.log(computerChoice)
+        gamePlaying = true
+        if (computerChoice == 2) {
+            status.innerHTML = "Tied"
+        }
+        else if (computerChoice == 3) {
+            computerScore = computerScore + 1
+            status.innerHTML = "You lose"
+        }
+        else if (computerChoice == 1) {
+            playerScore = playerScore + 1
+            status.innerHTML = "You win"
+        }
+        score.innerHTML = `(You) ${playerScore} - (Computer) ${computerScore}`
+    })
+
+    scissors.addEventListener('click', ()=>{
+        computerChoice = getRndInteger(1, 3)
+        console.log(computerChoice)
+        gamePlaying = true
+        if (computerChoice == 3) {
+            status.innerHTML = "Tied"
+        }
+        else if (computerChoice == 1) {
+            computerScore = computerScore + 1
+            status.innerHTML = "You lose"
+        }
+        else if (computerChoice == 2) {
+            playerScore = playerScore + 1
+            status.innerHTML = "You win"
+        }
+        score.innerHTML = `(You) ${playerScore} - (Computer) ${computerScore}`
+    })
