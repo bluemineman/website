@@ -1,6 +1,6 @@
-const rock = document.getElementId('rock')
-const paper = document.getElementId('paper')
-const scissors = document.getElementId('scissors')
+const rock = document.getElementById('rock')
+const paper = document.getElementById('paper')
+const scissors = document.getElementById('scissors')
 const score = document.querySelector('.score')
 const status = document.querySelector('.status')
 
@@ -13,11 +13,15 @@ let playerScore = 0
 let computerScore = 0
 let computerChoice = 1
 while (gamePlaying = false) {
-    rock.addEventListener('click' ()=> {
+    rock.addEventListener('click', ()=>{
         computerChoice = getRndInteger(1, 3)
         gamePlaying = true
         if (computerChoice = 1) {
-            status
+            status.innerHTML = "Tied"
+        }
+        else if (computerChoice = 2) {
+            computerScore = computerScore + 1
+            status.innerHTML = "You lose"
         }
     })
 }
