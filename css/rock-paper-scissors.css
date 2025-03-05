@@ -23,6 +23,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    cursor: pointer;
     color: black;
 }
 
@@ -33,13 +34,13 @@ body{
 }
 
 .score {
-    height: 60vh;
+    height: 70vh;
     font-size: 20px;
     position: absolute;
 }
 
 .status {
-    height: 40vh;
+    height: 50vh;
     font-size: 25px;
     position: absolute;
 }
