@@ -4,8 +4,8 @@
 
 body{
     display: flex;
-    height: 100vh;
-    
+    height: 200vh;
+    align-items: center;
     justify-content: center;
     margin: 0;
 }
@@ -28,12 +28,18 @@ body{
 
 .title {
     position: absolute;
-    height: 100vh;
+    height: 200vh;
     font-size: 40px;
 }
 
 .score {
-    height: 60vh;
+    height: 160vh;
     font-size: 20px;
+    position: absolute;
+}
+
+.status {
+    height: 50vh;
+    font-size: 25px;
     position: absolute;
 }
