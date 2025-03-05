@@ -12,9 +12,10 @@ let gamePlaying = false
 let playerScore = 0
 let computerScore = 0
 let computerChoice = 1
-while (gamePlaying = false) {
+
     rock.addEventListener('click', ()=>{
         computerChoice = getRndInteger(1, 3)
+        console.log(computerChoice)
         gamePlaying = true
         if (computerChoice = 1) {
             status.innerHTML = "Tied"
@@ -24,4 +25,4 @@ while (gamePlaying = false) {
             status.innerHTML = "You lose"
         }
     })
-}
+
