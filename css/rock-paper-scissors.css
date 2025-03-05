@@ -17,6 +17,12 @@ body{
     background-repeat: no-repeat;
     height: 150px;
     width: 150px;
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
     color: black;
 }
 
