@@ -3,7 +3,7 @@ const paper = document.getElementById('paper')
 const scissors = document.getElementById('scissors')
 const score = document.querySelector('.score')
 const status = document.querySelector('.status')
-const computerChose = document.QuerySelector('.computerChoice')
+const computerChose = document.querySelector('.computerChoice')
 
 function getRndInteger(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
