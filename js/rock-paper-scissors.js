@@ -46,7 +46,7 @@ function rockChosen() {
         status.innerHTML = "You win"
         computerChose.innerHTML = "Computer chose: Scissors"
     }
-    score.innerHTML = `(You) ${playerScore} - (Computer) ${computerScore}`
+    score.innerHTML = `<h3>(You) ${playerScore} - (Computer) ${computerScore}<h3>`
 }
 
 
@@ -66,7 +66,7 @@ function paperChosen() {
         status.innerHTML = "You win"
         computerChose.innerHTML = "Computer chose: Rock"
     }
-    return score.innerHTML = `(You) ${playerScore} - (Computer) ${computerScore}`
+    return score.innerHTML = `<h3>(You) ${playerScore} - (Computer) ${computerScore}<h3>`
 }
 
 function scissorsChosen() {
@@ -85,5 +85,5 @@ function scissorsChosen() {
         status.innerHTML = "You win"
         computerChose.innerHTML = "Computer chose: Paper"
     }
-    return score.innerHTML = `(You) ${playerScore} - (Computer) ${computerScore}`
+    return score.innerHTML = `<h3>(You) ${playerScore} - (Computer) ${computerScore}<h3>`
 }
