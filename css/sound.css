@@ -10,3 +10,11 @@ body {
     height: 100vh;
     margin: 0;
 }
+
+.btn {
+    height: 100px;
+    width: 150px;
+    margin: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
