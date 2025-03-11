@@ -3,5 +3,10 @@
 }
 
 body {
-    background-color: rgb(161, 100, 223)
+    background-color: rgb(161, 100, 223);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
 }
