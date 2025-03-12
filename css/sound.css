@@ -16,6 +16,7 @@ body {
     height: 100px;
     width: 150px;
     margin: 20px;
+    padding: 5px 15px;
     font-size: 30px;
     color: white;
     cursor: pointer;
