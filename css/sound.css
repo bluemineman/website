@@ -12,9 +12,11 @@ body {
 }
 
 .btn {
+    background-color: rebeccapurple;
     height: 100px;
     width: 150px;
     margin: 20px;
     font-size: 30px;
+    color: white;
     cursor: pointer;
 }
