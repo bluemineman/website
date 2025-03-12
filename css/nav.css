@@ -42,5 +42,5 @@ body {
 .nav a {
     color: white;
     padding: 7px 15px;
-    
+    text-decoration: none;
 }
