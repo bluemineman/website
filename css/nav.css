@@ -29,5 +29,18 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0
+    padding: 20px 0;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: white;
+    padding: 7px 15px;
+    
 }
