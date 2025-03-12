@@ -47,10 +47,15 @@ body {
 }
 
 .hero {
+    background-image: url('../images/box.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
+    color: white;
 }
