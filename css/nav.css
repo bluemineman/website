@@ -46,6 +46,18 @@ body {
 
 }
 
+.nav.active {
+    background-color: white
+}
+
+.nav.active a {
+    color: black;
+}
+
+.nav.active .container {
+    padding: 10px 0;
+}
+
 .hero {
     position: relative;
     background-image: url('../images/box.avif');
