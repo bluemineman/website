@@ -58,6 +58,10 @@ body {
     padding: 10px 0;
 }
 
+.nav a.current, .nav a:hover {
+    color: gray;
+}
+
 .hero {
     position: relative;
     background-image: url('../images/box.avif');
