@@ -32,6 +32,18 @@ function startGame() {
 function increaseTime() {
     let s = seconds % 60
     let m = Math.floor(seconds / 60)
-    timeEl.innerHTML = `Time: ${seconds}`
+    if (s < 10) {
+        s = `0${s}`
+    }
+    if (m < 10) {
+        m = `0${m}`
+    }
+    timeEl.innerHTML = `Time: ${m}:${s}`
     seconds = seconds + 1
+}
+
+function createInsect() {
+    const insect = document.createElement('div')
+    insect.classList.add('insect')
+    insect.innerHTML = `<img src="${selectedInsect.src}">`
 }
