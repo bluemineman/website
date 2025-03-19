@@ -121,3 +121,7 @@ h1 {
     height: 100px;
     position: absolute;
 }
+
+.insect.caught {
+    transform: scale(0);
+}
