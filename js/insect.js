@@ -45,5 +45,6 @@ function increaseTime() {
 function createInsect() {
     const insect = document.createElement('div')
     insect.classList.add('insect')
-    insect.innerHTML = `<img src="${selectedInsect.src}">`
+    insect.innerHTML = `<img src="${selectedInsect.src}" alt="${selectedInsect.alt}">`
+    gameContainer.appendChild(insect)
 }
