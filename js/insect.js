@@ -13,5 +13,6 @@ startBtn.addEventListener('click', () => {
 chooseInsectBtns.forEach(btn => {
     btn.addEventListener('click', () => {
         screens[1].classList.add('up')
+        
     })
 })
