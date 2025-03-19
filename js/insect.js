@@ -48,3 +48,8 @@ function createInsect() {
     insect.innerHTML = `<img src="${selectedInsect.src}" alt="${selectedInsect.alt}">`
     gameContainer.appendChild(insect)
 }
+
+function getRandomLocation() {
+    const width = window.innerWidth
+    const height = window.innerHeight
+}
