@@ -65,6 +65,9 @@ function getRandomLocation() {
 
 function catchInsect() {
     increaseScore()
+    this.classList.add('caught')
+    createInsect()
+    createInsect()
 }
 function increaseScore() {
         score = score + 1
