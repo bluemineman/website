@@ -3,26 +3,12 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 50vh;
+    height: 100vh;
     margin: 0;
 }
 
-.title{
-    position: relative;
-    height: 200px;
-    font-size: 40px;
-}
 
-.searchLink{
-    height: 100px;
-    position: absolute;
-}
-
-.loadingLink{
-    height: 50px;
-    position: absolute;
-}
