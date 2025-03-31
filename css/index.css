@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
 body {
     font-family: 'Comic Sans MS', sans-serif;
     display: flex;
@@ -15,6 +24,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    animation: spin .3s linear infinite;
+    animation-play-state: paused;
 }
 
 .title {
