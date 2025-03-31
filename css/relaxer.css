@@ -104,6 +104,6 @@ body {
         transform: scale(1.2);
     }
     to {
-        transfrom: scale(1);
+        transform: scale(1);
     }
 }
