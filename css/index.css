@@ -51,7 +51,7 @@ body {
     color: gray;
 }
 
-.content {
+#content {
     position: absolute;
     color: white;
     margin: 20px;
