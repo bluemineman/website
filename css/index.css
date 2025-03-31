@@ -58,7 +58,7 @@ body {
     height: 30vh;
     font-size: 20px;
     animation: spin 1s linear infinite;
-    animation-play-state: running;
+    animation-play-state: paused;
 }
 
 .btn {
