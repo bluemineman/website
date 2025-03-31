@@ -60,5 +60,5 @@ body {
 
 #element5 {
     animation: spin .3s linear infinite;
-    animation-play-state: paused;
+    animation-play-state: running;
 }

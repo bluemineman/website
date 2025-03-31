@@ -24,8 +24,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    animation: spin .3s linear infinite;
-    animation-play-state: paused;
+    animation: spin 1s linear ;
+    animation-play-state: running;
 }
 
 .title {
