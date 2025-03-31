@@ -68,7 +68,7 @@ body {
     left: 140px;
     width: 20px;
     height: 190px;
-    
+
     animation: rotate 7.5s linear infinite;
     transform-origin: bottom center;
 }
@@ -80,4 +80,8 @@ body {
     to {
         transform: rotate(360deg);
     }
+}
+
+.container .grow {
+    animation: grow 
 }
