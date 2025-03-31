@@ -64,5 +64,7 @@ body {
 }
 
 #home {
-    style: none;
+    
+    text-decoration: none;
+    color: white;
 }
