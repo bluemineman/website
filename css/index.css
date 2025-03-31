@@ -19,10 +19,9 @@ body {
 
 .title {
     position: absolute;
-    height: 100vh;
+    top: 20px;
     font-size: 24px;
     color: white;
-    background-color: red;
 }
 
 .links ul {
