@@ -75,15 +75,11 @@ body {
 
 @keyframes rotate {
     from {
-        transfrom: rotate(0deg);
+        transform: rotate(0deg);
     }
     to {
         transform: rotate(360deg);
     }
-}
-
-.container .grow {
-    animation: grow 3s linear forwards;
 }
 
 @keyframes grow {
@@ -92,5 +88,22 @@ body {
     }
     to {
         transform: scale(1.2);
+    }
+}
+
+.container .grow {
+    animation: grow 3s linear forwards;
+}
+
+.container .shrink {
+    animation: shrink 3s linear forwards;
+}
+
+@keyframes shrink {
+    from {
+        transform: scale(1.2);
+    }
+    to {
+        transfrom: scale(1);
     }
 }
