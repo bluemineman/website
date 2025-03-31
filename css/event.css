@@ -63,6 +63,12 @@ body {
     animation-play-state: paused;
 }
 
+.home {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
 .home a{
     color: white;
     padding: 7px 15px;

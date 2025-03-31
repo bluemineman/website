@@ -59,3 +59,21 @@ body{
         width: 100vw;
     }
 }
+
+
+.home {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.home a{
+    color: white;
+    padding: 7px 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.home a.current, .home a:hover {
+    color: gray;
+}
