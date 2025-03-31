@@ -5,5 +5,10 @@
 }
 
 body {
-    background: #224941 url('../images/')
+    background: #224941 url('../images/') no-repeat center center/cover;
+    color: white;
+    font-family: 'Smooch Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
