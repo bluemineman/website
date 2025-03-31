@@ -22,6 +22,7 @@ body {
     height: 100vh;
     font-size: 24px;
     color: white;
+    background-color: red;
 }
 
 .links ul {
@@ -29,6 +30,7 @@ body {
     list-style-type: none;
     justify-content: center;
     height: 50vh;
+    z-index: 500;
 }
 
 @keyframes spin {
