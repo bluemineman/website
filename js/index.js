@@ -1,5 +1,5 @@
 const btn = document.querySelector('.btn')
-const content = document.getElementById('container')
+const content = document.getElementById('content')
 
 const list = ['running', 'paused']
 let index = 0
