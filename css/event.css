@@ -63,47 +63,6 @@ body {
     animation-play-state: paused;
 }
 
-.nav {
-    position: fixed;
-    background-color: rgb(22, 22, 22);
-    top: 0;
-    left: 0;
-    right: 0;
-}
-
-.nav .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
-}
-
-.nav ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav a {
-    color: white;
-    padding: 7px 15px;
-    text-decoration: none;
-
-}
-
-.nav.active {
-    background-color: white
-}
-
-.nav.active a {
-    color: black;
-}
-
-.nav.active .container {
-    padding: 10px 0;
-}
-
-.nav a.current, .nav a:hover {
-    color: gray;
+#home {
+    style: none;
 }
