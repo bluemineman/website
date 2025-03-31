@@ -18,4 +18,5 @@ function breathAnimation() {
 }
 
 breathAnimation()
+
 setInterval(breathAnimation, 7500)
