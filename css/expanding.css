@@ -64,11 +64,12 @@ body{
 .home {
     display: flex;
     justify-content: center;
+    top: 10px;
     height: 50vh;
 }
 
 .home a{
-    color: white;
+    color: black;
     padding: 7px 15px;
     text-decoration: none;
     font-size: 20px;
