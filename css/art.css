@@ -22,3 +22,8 @@ body {
     bottom: 0px;
 }
 
+.house-body {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 225, 220)
+}
