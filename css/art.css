@@ -25,5 +25,8 @@ body {
 .house-body {
     width: 200px;
     height: 200px;
-    background-color: rgb(255, 225, 220)
+    background-color: #ffe4bd;
+    position: absolute;
+    bottom: 50px;
+    left: 200px;
 }
