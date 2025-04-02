@@ -44,5 +44,56 @@ body {
   }
 
   .window-right {
-    jcolor
+    background-color: #93f6fe;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 150px;
+    left: 350px;
+  }
+
+  .window-left {
+    background-color: #93f6fe;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 150px;
+    left: 210px;
+  }
+
+  .door {
+    background-color: #d16f01;
+    position: absolute;
+    height: 75px;
+    width: 40px;
+    left: 280px;
+    bottom: 50px;
+  }
+
+  .doorknob {
+    background-color: black;
+    position: absolute;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    bottom: 80px;
+    left: 305px;
+  }
+
+  .stick-body {
+    background-color: black;
+    height: 50px;
+    width: 5px;
+    position: absolute;
+    bottom: 80px;
+    left: 500px;
+  }
+
+  .stick-head {
+    background-color: white;
+    border: 80px: solid black;
+    border-radius: 50%;
+    position: absolute;
+    width: 25px;
+    height: 25px;
   }
