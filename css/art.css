@@ -1,4 +1,7 @@
 
+body {
+    background-color: rgb(100,30,250);
+}
 
 .sun {
     height: 200px;
@@ -8,4 +11,12 @@
     position: absolute;
     top: 30px;
     right: 30px;
+}
+
+.grass {
+    height: 50px;
+    width: 100vw;
+    background-color: green;
+    position: absolute;
+    bottom: 0px;
 }
