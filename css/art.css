@@ -71,7 +71,7 @@ body {
   }
 
   .doorknob {
-    background-color: black;
+    background-color: yellow;
     position: absolute;
     border-radius: 50%;
     width: 10px;
@@ -90,10 +90,170 @@ body {
   }
 
   .stick-head {
+    border: 5px solid black;
     background-color: white;
-    border: 80px: solid black;
     border-radius: 50%;
     position: absolute;
-    width: 25px;
-    height: 25px;
+    width: 30px;
+    height: 30px;
+    bottom: 130px;
+    left: 483px;
+  }
+
+  .left-arm {
+    background-color: black;
+    height: 40px;
+    width: 5px;
+    position: absolute;
+    bottom: 85px;
+    left: 490px;
+    rotate: 30deg;
+  }
+
+  .right-arm {
+    background-color: black;
+    height: 40px;
+    width: 5px;
+    position: absolute;
+    bottom: 85px;
+    left: 510px;
+    rotate: -30deg;
+  }
+
+  .left-leg {
+    background-color: black;
+    height: 40px;
+    width: 5px;
+    position: absolute;
+    bottom: 46px;
+    left: 490px;
+    rotate: 30deg;
+  }
+
+  .right-leg {
+    background-color: black;
+    height: 40px;
+    width: 5px;
+    position: absolute;
+    bottom: 46px;
+    left: 510px;
+    rotate: -30deg;
+  }
+
+  .tree-trunk {
+    background-color: #a75902;
+    height: 150px;
+    width: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 400px;
+    z-index: -1;
+  }
+
+  .root-left {
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 0px solid transparent;
+
+    border-bottom: 10px solid #a75902;
+    position: absolute;
+    bottom: 50px;
+    right: 450px;
+  }
+
+  .root-right {
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 40px solid transparent;
+
+    border-bottom: 12px solid #a75902;
+    position: absolute;
+    bottom: 50px;
+    right: 360px;
+  }
+
+  .top-leave1 {
+    background-color: #07c110;
+    border-radius: 50%;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 190px;
+    right: 340px;
+  }
+
+  .top-leave2 {
+    background-color: #07c110;
+    border-radius: 50%;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 220px;
+    right: 380px;
+  }
+
+  .top-leave3 {
+    background-color: #07c110;
+    border-radius: 50%;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 225px;
+    right: 420px;
+  }
+
+  .top-leave4 {
+    background-color: #07c110;
+    border-radius: 50%;
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    bottom: 180px;
+    right: 450px;
+  }
+
+  .bottom-leave1 {
+    background-color: #0d7412;
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 190px;
+    right: 430px;
+    z-index: -1;
+  }
+
+  .bottom-leave2 {
+    background-color: #0d7412;
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 185px;
+    right: 385px;
+    z-index: -2;
+  }
+
+  .bottom-leave3 {
+    background-color: #0d7412;
+    border-radius: 50%;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: 185px;
+    right: 370px;
+    z-index: -1;
+  }
+
+  .tree-hole-thing {
+    background-color: #4c3102;
+    border-radius: 50%;
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    bottom: 110px;
+    right: 405px;
+    z-index: -1;
   }
