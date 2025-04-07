@@ -50,7 +50,7 @@ function createBall() {
 function createlPaddle() {
     lPaddle.style.height = `${lPaddleHeight}px`
     lPaddle.style.width = `${lPaddleWidth}px`
-    lPaddle.style.backgroundColor = "blue"
+    lPaddle.style.backgroundColor = 'blue'
     lPaddle.style.position = 'absolute'
     lPaddle.style.left = "20px"
     lPaddle.style.top = `${lPaddleYPosition}px`
