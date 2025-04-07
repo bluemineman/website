@@ -58,10 +58,20 @@ function createlPaddle() {
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowUp') {
-        lPaddleYPosition = lPaddleYPosition - lPaddleSpeed
+        if (lPaddleYPosition <= 0){
+            lPaddleYPosition = lPaddleYPosition
+        }
+        else {
+            lPaddleYPosition = lPaddleYPosition - lPaddleSpeed
+        }
     }
     else if (event.key == 'ArrowDown') {
-        lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
+        if (lPaddleYPosition >= windowHeight - lPaddleHeight) {
+            lPaddleYPosition = lPaddleYPosition
+        }
+        else {
+            lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
+        }
     }
     lPaddle.style.top = `${lPaddleYPosition}px`
 })
