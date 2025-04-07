@@ -8,7 +8,7 @@ const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
 let lPaddleWidth = 20
-let lPaddleHeight = 200
+let lPaddleHeight = 2000
 let lPaddleYPosition = windowHeight / 2 - lPaddleHeight / 2
 let lPaddleSpeed = 10
 
