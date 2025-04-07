@@ -54,3 +54,4 @@ function createlPaddle() {
     lPaddle.style.left = "20px"
     lPaddle.style.top = `${lPaddleYPosition}px`
 }
+
