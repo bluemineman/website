@@ -55,3 +55,4 @@ function createlPaddle() {
     lPaddle.style.top = `${lPaddleYPosition}px`
 }
 
+lPaddle.addEventListener('keydown')
