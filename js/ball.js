@@ -36,7 +36,11 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
-    if ()
+    if (ballYPosition <= lPaddleYPosition && ballYPosition >= lPaddleYPosition - lPaddleHeight && ballXPosition + ballRadius <= lPaddleWidth) {
+        console.log("hit")
+        ballYDirection = ballYDirection * -1
+        ballXDirection = ballXDirection * -1
+    }
 }
 
 function createBall() {
