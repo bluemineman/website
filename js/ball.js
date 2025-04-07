@@ -76,4 +76,3 @@ document.addEventListener('keydown', (event) => {
     lPaddle.style.top = `${lPaddleYPosition}px`
 })
 
-    
