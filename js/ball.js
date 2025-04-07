@@ -3,12 +3,13 @@ document.body.appendChild(ball)
 const lPaddle = document.createElement('div')
 document.body.appendChild(lPaddle)
 
-let lPaddleWidth = 20
-let lPaddleHeight = 100
-
 const ballRadius = 50
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
+
+let lPaddleWidth = 20
+let lPaddleHeight = 200
+let lPaddleYPosition = windowHeight / 2 - lPaddleHeight / 2
 
 let ballSpeed = 5
 let ballXPosition = windowWidth / 2 - ballRadius
@@ -18,6 +19,7 @@ let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
 
 createBall()
+createlPaddle()
 
 setInterval(moveBall, 10)
 
@@ -44,4 +46,11 @@ function createBall() {
     ball.style.left = `${ballXPosition}px`
 }
 
-
+function createlPaddle() {
+    lPaddle.style.height = `${lPaddleHeight}px`
+    lPaddle.style.width = `${lPaddleWidth}px`
+    lPaddle.style.backgroundColor = "blue"
+    lPaddle.style.position = 'absolute'
+    lPaddle.style.left = "20px"
+    lPaddle.style.top = `${lPaddleYPosition}px`
+}
