@@ -1,5 +1,10 @@
 const ball = document.createElement('div')
+document.body.appendChild(ball)
 const lPaddle = document.createElement('div')
+document.body.appendChild(lPaddle)
+
+let lPaddleWidth = 20
+let lPaddleHeight = 100
 
 const ballRadius = 50
 const windowHeight = window.innerHeight
@@ -30,7 +35,6 @@ function moveBall() {
 }
 
 function createBall() {
-    
     ball.style.height = `${2 * ballRadius}px`
     ball.style.width = `${2 * ballRadius}px`
     ball.style.borderRadius = "50%"
