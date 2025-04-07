@@ -57,9 +57,9 @@ function createlPaddle() {
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowUp') {
-
+        lPaddleYPosition = lPaddleYPosition + 10
     }
     else if (event.key == 'ArrowDown') {
-        
+        lPaddleYPosition = lPaddleYPosition - 10
     }
 })
