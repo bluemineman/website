@@ -67,7 +67,7 @@ document.addEventListener('keydown', (event) => {
     }
     else if (event.key == 'ArrowDown') {
         if (lPaddleYPosition >= windowHeight - lPaddleHeight) {
-            lPaddleYPosition = lPaddleYPosition
+            lPaddleYPosition = windowHeight - lPaddleHeight
         }
         else {
             lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
