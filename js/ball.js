@@ -55,4 +55,11 @@ function createlPaddle() {
     lPaddle.style.top = `${lPaddleYPosition}px`
 }
 
-lPaddle.addEventListener('keydown')
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'ArrowUp') {
+
+    }
+    else if (event.key == 'ArrowDown') {
+        
+    }
+})
