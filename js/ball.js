@@ -10,6 +10,7 @@ const windowWidth = window.innerWidth
 let lPaddleWidth = 20
 let lPaddleHeight = 200
 let lPaddleYPosition = windowHeight / 2 - lPaddleHeight / 2
+let lPaddleSpeed = 10
 
 let ballSpeed = 5
 let ballXPosition = windowWidth / 2 - ballRadius
@@ -57,10 +58,10 @@ function createlPaddle() {
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowUp') {
-        lPaddleYPosition = lPaddleYPosition - 10
+        lPaddleYPosition = lPaddleYPosition - lPaddleSpeed
     }
     else if (event.key == 'ArrowDown') {
-        lPaddleYPosition = lPaddleYPosition + 10
+        lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
     }
     lPaddle.style.top = `${lPaddleYPosition}px`
 })
