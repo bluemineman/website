@@ -25,7 +25,8 @@ let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
 
 let score = 0 // display score and increase the score by one every time the ball hits the paddle
-let level = 1 // display level and increase level by 1 every time the score increases by 10
+let level = 1
+let scoreThreshold = 10 // display level and increase level by 1 every time the score increases by 10
 // as the levels increase, increase ball speed. if the ball gets past your paddle, end game
 //make ball stop or disappear and let user know game is over
 //optional: sound effects, background music
@@ -61,6 +62,10 @@ function moveBall() {
     ) {
         console.log("hit")
         updateScore()
+
+        if (score >= scoreThreshold) {
+            scoreThreshold
+        }
         ballYDirection = ballYDirection * -1
         ballXDirection = ballXDirection * -1
     }
@@ -101,6 +106,12 @@ function createLevel() {
     levelEl.style.position = 'absolute'
     levelEl.style.right = "10px"
     levelEl.style.fontSize = "25px"
+}
+
+function updateLevel() {
+    level = level + 1
+    levelEl.innerHTML = `Level: ${level}`
+    ballSpeed = ballSpeed + 2
 }
 
 wKey = false
