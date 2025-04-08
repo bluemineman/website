@@ -10,6 +10,7 @@ const windowWidth = window.innerWidth
 let lPaddleWidth = 20
 let lPaddleHeight = 200
 let lPaddleYPosition = windowHeight / 2 - lPaddleHeight / 2
+let lPaddleXPosition = 20
 let lPaddleSpeed = 10
 
 let ballSpeed = 5
@@ -58,7 +59,7 @@ function createlPaddle() {
     lPaddle.style.width = `${lPaddleWidth}px`
     lPaddle.style.backgroundColor = 'blue'
     lPaddle.style.position = 'absolute'
-    lPaddle.style.left = "20px"
+    lPaddle.style.left = `${lPaddleXPosition}px`
     lPaddle.style.top = `${lPaddleYPosition}px`
 }
 
