@@ -33,6 +33,7 @@ let level = 1 // display level and increase level by 1 every time the score incr
 createBall()
 createlPaddle()
 createScore()
+createLevel()
 
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
@@ -87,12 +88,19 @@ function createlPaddle() {
 function createScore() {
     scoreEl.innerHTML = `Score: ${score}`
     scoreEl.style.position = 'absolute'
-    scoreEl.style.fontSize = "30px"
+    scoreEl.style.fontSize = "25px"
 }
 
 function updateScore() {
     score = score + 1
     scoreEl.innerHTML = `Score: ${score}`
+}
+
+function createLevel() {
+    levelEl.innerHTML = `Level: ${level}`
+    levelEl.style.position = 'absolute'
+    levelEl.style.right = "10px"
+    levelEl.style.fontSize = "25px"
 }
 
 wKey = false
