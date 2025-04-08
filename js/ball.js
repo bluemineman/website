@@ -20,6 +20,10 @@ let ballXDirection = 1
 let ballYPosition = windowHeight / 2 - ballRadius
 let ballYDirection = 1
 
+let score = 0 // display score and increase the score by one every time the ball hits the paddle
+let level = 1 // display level and increase level by 1 every time the score increases by 10
+// as the levels increase, increase ball speed
+
 createBall()
 createlPaddle()
 
