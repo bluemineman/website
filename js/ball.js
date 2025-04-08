@@ -2,6 +2,10 @@ const ball = document.createElement('div')
 document.body.appendChild(ball)
 const lPaddle = document.createElement('div')
 document.body.appendChild(lPaddle)
+const scoreEl = document.createElement('div')
+document.body.appendChild(scoreEl)
+const levelEl = document.createElement('div')
+document.body.appendChild(levelEl)
 
 const ballRadius = 50
 const windowHeight = window.innerHeight
@@ -28,6 +32,7 @@ let level = 1 // display level and increase level by 1 every time the score incr
 
 createBall()
 createlPaddle()
+createScore()
 
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
@@ -54,6 +59,7 @@ function moveBall() {
         (ballXDirection == -1)
     ) {
         console.log("hit")
+        updateScore()
         ballYDirection = ballYDirection * -1
         ballXDirection = ballXDirection * -1
     }
@@ -76,6 +82,17 @@ function createlPaddle() {
     lPaddle.style.position = 'absolute'
     lPaddle.style.left = `${lPaddleXPosition}px`
     lPaddle.style.top = `${lPaddleYPosition}px`
+}
+
+function createScore() {
+    scoreEl.innerHTML = `Score: ${score}`
+    scoreEl.style.position = 'absolute'
+    scoreEl.style.fontSize = "30px"
+}
+
+function updateScore() {
+    score = score + 1
+    scoreEl.innerHTML = `Score: ${score}`
 }
 
 wKey = false
