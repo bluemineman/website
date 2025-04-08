@@ -119,6 +119,7 @@ function updateLevel() {
 }
 
 function createDeath() {
+    deathEl.style.container = 'flex'
     deathEl.style.position = 'absolute'
     deathEl.style.alignItems = 'center'
     deathEl.style.justifyContent = 'center'
