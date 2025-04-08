@@ -43,7 +43,12 @@ function moveBall() {
     let lPaddleTop = lPaddleYPosition
     let lPaddleBottom = lPaddleYPosition + lPaddleHeight
     let lPaddleRight = lPaddleXPosition + lPaddleWidth
-    if (ballYPosition <= lPaddleYPosition && ballYPosition >= lPaddleYPosition - lPaddleHeight && ballXPosition + ballRadius <= lPaddleWidth) {
+    if (
+        (ballBottom >= lPaddleTop) &&
+        (ballTop <= lPaddleBottom) &&
+        (ballLeft <= lPaddleRight) &&
+        (ballXDirection == -1)
+    ) {
         console.log("hit")
         ballYDirection = ballYDirection * -1
         ballXDirection = ballXDirection * -1
@@ -71,21 +76,17 @@ function createlPaddle() {
 
 document.addEventListener('keydown', (event) => {
     if (event.key == 'ArrowUp') {
-        if (lPaddleYPosition <= 0){
+        if (lPaddleYPosition <= 0) {
             lPaddleYPosition = lPaddleYPosition
-        }
-        else {
+        } else {
             lPaddleYPosition = lPaddleYPosition - lPaddleSpeed
         }
-    }
-    else if (event.key == 'ArrowDown') {
+    } else if (event.key == 'ArrowDown') {
         if (lPaddleYPosition >= windowHeight - lPaddleHeight) {
             lPaddleYPosition = windowHeight - lPaddleHeight
-        }
-        else {
+        } else {
             lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
         }
     }
     lPaddle.style.top = `${lPaddleYPosition}px`
 })
-
