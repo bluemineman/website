@@ -37,6 +37,12 @@ function moveBall() {
         ballYDirection = ballYDirection * -1
     }
 
+    let ballTop = ballYPosition
+    let ballBottom = ballYPosition + 2 * ballRadius
+    let ballLeft = ballXPosition
+    let lPaddleTop = lPaddleYPosition
+    let lPaddleBottom = lPaddleYPosition + lPaddleHeight
+    let lPaddleRight = lPaddleXPosition + lPaddleWidth
     if (ballYPosition <= lPaddleYPosition && ballYPosition >= lPaddleYPosition - lPaddleHeight && ballXPosition + ballRadius <= lPaddleWidth) {
         console.log("hit")
         ballYDirection = ballYDirection * -1
