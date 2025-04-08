@@ -22,7 +22,9 @@ let ballYDirection = 1
 
 let score = 0 // display score and increase the score by one every time the ball hits the paddle
 let level = 1 // display level and increase level by 1 every time the score increases by 10
-// as the levels increase, increase ball speed
+// as the levels increase, increase ball speed. if the ball gets past your paddle, end game
+//make ball stop or disappear and let user know game is over
+//optional: sound effects, background music
 
 createBall()
 createlPaddle()
