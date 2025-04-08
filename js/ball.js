@@ -123,6 +123,7 @@ function createDeath() {
     deathEl.style.alignItems = 'center'
     deathEl.style.justifyContent = 'center'
     deathEl.innerHTML = "GAME OVER"
+    deathEl.style.fontSize = "50px"
 }
 
 wKey = false
