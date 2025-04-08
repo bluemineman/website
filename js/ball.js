@@ -80,8 +80,27 @@ sKey = false
 document.addEventListener('keydown', (event) => {
     if (event.key == 'w') {
         wKey = true
-    } else if (event.key == 's') {
+    }
+    if (event.key == 's') {
         sKey = true
     }
-    lPaddle.style.top = `${lPaddleYPosition}px`
 })
+
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'w') {
+        wKey = false
+    }
+    if (event.key == 's') {
+        wKey = false
+    }
+})
+
+function moveLPaddle() {
+    if (wKey && lPaddleYPosition > 0) {
+        lPaddleYPosition = lPaddleYPosition - lPaddleSpeed
+    }
+    if (sKey && lPaddleYPosition < windowHeight - lPaddleHeight) {
+        lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
+    }
+    lPaddle.style.top = `${lPaddleYPosition}px`
+}
