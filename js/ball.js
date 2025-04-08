@@ -26,7 +26,7 @@ let ballYDirection = 1
 
 let score = 0 // display score and increase the score by one every time the ball hits the paddle
 let level = 1
-let scoreThreshold = 10 // display level and increase level by 1 every time the score increases by 10
+let scoreThreshold = 5 // display level and increase level by 1 every time the score increases by 10
 // as the levels increase, increase ball speed. if the ball gets past your paddle, end game
 //make ball stop or disappear and let user know game is over
 //optional: sound effects, background music
@@ -64,7 +64,8 @@ function moveBall() {
         updateScore()
 
         if (score >= scoreThreshold) {
-            scoreThreshold
+            scoreThreshold = scoreThreshold + 5
+            updateLevel()
         }
         ballYDirection = ballYDirection * -1
         ballXDirection = ballXDirection * -1
