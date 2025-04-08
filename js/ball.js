@@ -6,6 +6,8 @@ const scoreEl = document.createElement('div')
 document.body.appendChild(scoreEl)
 const levelEl = document.createElement('div')
 document.body.appendChild(levelEl)
+const deathEl = document.createElement('div')
+document.body.appendChild(deathEl)
 
 const ballRadius = 50
 const windowHeight = window.innerHeight
@@ -35,6 +37,7 @@ createBall()
 createlPaddle()
 createScore()
 createLevel()
+createDeath()
 
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
@@ -113,6 +116,13 @@ function updateLevel() {
     level = level + 1
     levelEl.innerHTML = `Level: ${level}`
     ballSpeed = ballSpeed + 2
+}
+
+function createDeath() {
+    deathEl.style.position = 'absolute'
+    deathEl.style.alignItems = 'center'
+    deathEl.style.justifyContent = 'center'
+    deathEl.innerHTML = "GAME OVER"
 }
 
 wKey = false
