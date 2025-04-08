@@ -23,8 +23,6 @@ let ballYDirection = 1
 createBall()
 createlPaddle()
 
-setInterval(moveBall, 10)
-
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ball.style.left = `${ballXPosition}px`
@@ -91,7 +89,7 @@ document.addEventListener('keyup', (event) => {
         wKey = false
     }
     if (event.key == 's') {
-        wKey = false
+        sKey = false
     }
 })
 
@@ -104,3 +102,11 @@ function moveLPaddle() {
     }
     lPaddle.style.top = `${lPaddleYPosition}px`
 }
+
+function animate() {
+    moveBall()
+    moveLPaddle()
+    requestAnimationFrame(animate)
+}
+
+animate()
