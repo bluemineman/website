@@ -74,19 +74,14 @@ function createlPaddle() {
     lPaddle.style.top = `${lPaddleYPosition}px`
 }
 
+wKey = false
+sKey = false
+
 document.addEventListener('keydown', (event) => {
-    if (event.key == 'ArrowUp') {
-        if (lPaddleYPosition <= 0) {
-            lPaddleYPosition = lPaddleYPosition
-        } else {
-            lPaddleYPosition = lPaddleYPosition - lPaddleSpeed
-        }
-    } else if (event.key == 'ArrowDown') {
-        if (lPaddleYPosition >= windowHeight - lPaddleHeight) {
-            lPaddleYPosition = windowHeight - lPaddleHeight
-        } else {
-            lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
-        }
+    if (event.key == 'w') {
+        wKey = true
+    } else if (event.key == 's') {
+        sKey = true
     }
     lPaddle.style.top = `${lPaddleYPosition}px`
 })
