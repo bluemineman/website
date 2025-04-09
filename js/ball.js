@@ -8,13 +8,15 @@ const levelEl = document.createElement('div')
 document.body.appendChild(levelEl)
 const deathEl = document.createElement('div')
 document.body.appendChild(deathEl)
+const startBtn = document.createElement('btn')
+document.body.appendChild(startBtn)
 
-const ballRadius = 50
+const ballRadius = 40
 const windowHeight = window.innerHeight
 const windowWidth = window.innerWidth
 
 let lPaddleWidth = 20
-let lPaddleHeight = 200
+let lPaddleHeight = 175
 let lPaddleYPosition = windowHeight / 2 - lPaddleHeight / 2
 let lPaddleXPosition = 20
 let lPaddleSpeed = 10
@@ -33,22 +35,32 @@ let scoreThreshold = 5 // display level and increase level by 1 every time the s
 //make ball stop or disappear and let user know game is over
 //optional: sound effects, background music
 
-createBall()
-createlPaddle()
-createScore()
-createLevel()
-createDeath()
+createStartBtn()
+startBtn.addEventListener('click', () => {
+    startBtn.remove()
+    createBall()
+    createlPaddle()
+    createScore()
+    createLevel()
+    createDeath()
+})
+
+
 
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ball.style.left = `${ballXPosition}px`
-    if (ballXPosition < 0 || ballXPosition > windowWidth - 2 * ballRadius) {
+    if (ballXPosition < 0 || ballXPosition > windowWidth - 2.5 * ballRadius) {
         ballXDirection = ballXDirection * -1
     }
     ballYPosition = ballYPosition + ballSpeed * ballYDirection
     ball.style.top = `${ballYPosition}px`
-    if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius) {
+    if (ballYPosition < 0 || ballYPosition > windowHeight - 2.1 * ballRadius) {
         ballYDirection = ballYDirection * -1
+    }
+
+    if (ballXPosition < 0) {
+        gameOver()
     }
 
     let ballTop = ballYPosition
@@ -119,11 +131,26 @@ function updateLevel() {
 }
 
 function createDeath() {
-    deathEl.style.right = `${windowWidth / 2}px`
-    deathEl.style.top = `${windowHeight / 2}px`
+    deathEl.style.right = `${windowWidth / 2 - 150}px`
+    deathEl.style.top = `${windowHeight / 2 - 150}px`
     deathEl.style.position = 'absolute'
     deathEl.innerHTML = "GAME OVER"
     deathEl.style.fontSize = "50px"
+    deathEl.style.opacity = 0
+}
+
+function createStartBtn() {
+    startBtn.style.position = 'absolute'
+    startBtn.style.backgroundColor ='gray'
+    startBtn.innerHTML = "START GAME"
+    startBtn.style.width = "200px"
+    startBtn.style.height = "50px"
+    startBtn.style.textAlign = 'center'
+    startBtn.style.verticalAlign = 'middle'
+    startBtn.style.fontSize = "30px"
+    startBtn.style.cursor = 'pointer'
+    startBtn.style.right = `${windowWidth / 2 - 100}px`
+    startBtn.style.top = `${windowHeight / 2 - 50}px`
 }
 
 wKey = false
@@ -151,10 +178,18 @@ function moveLPaddle() {
     if (wKey && lPaddleYPosition > 0) {
         lPaddleYPosition = lPaddleYPosition - lPaddleSpeed
     }
-    if (sKey && lPaddleYPosition < windowHeight - lPaddleHeight) {
+    if (sKey && lPaddleYPosition < (windowHeight - lPaddleHeight) - 6) {
         lPaddleYPosition = lPaddleYPosition + lPaddleSpeed
     }
     lPaddle.style.top = `${lPaddleYPosition}px`
+}
+
+function gameOver() {
+    deathEl.style.opacity = 1
+    lPaddle.style.opacity = .2
+    ball.style.opacity = .2
+    ballSpeed = 0
+    lPaddleSpeed = 0
 }
 
 function animate() {
